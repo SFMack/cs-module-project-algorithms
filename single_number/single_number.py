@@ -4,12 +4,12 @@ Returns: an integer
 '''
 def single_number(arr):
     wrong_numbers = []
-    # loop through the given array
-    for i in range(len(arr)):
-        for x in range(i + 1, len(arr)):
-            if arr[i] == arr[x]:
-                wrong_numbers.append(arr[i])
-    return arr[i]
+    
+    i = 0
+    while i < len(arr):
+        if arr[i] in wrong_numbers:
+            print(wrong_numbers)
+
 
                 
 
